@@ -209,6 +209,7 @@ cursor:url(cursor.png),pointer !important;
 	background-color: #696969;
 	width:100%;
   overflow-x:hidden;
+  overflow-y: hidden;
 }
 @keyframes bounce {
   from,
@@ -359,6 +360,14 @@ li a{
   padding: 14px 16px;
   text-decoration: none;
 }
+@media(max-width:500px){ 
+ul{
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  display: block;
+}
+}
 .container{
    display: block;
    background: transparent;
@@ -366,7 +375,7 @@ li a{
    z-index: 9999;
    right: 60px;
    float: right;
-   position: relative;
+   position: fixed;
    box-shadow: none;
    outline: none;
    border:none;
@@ -374,13 +383,13 @@ li a{
    overflow-x:hidden;
 }
 @media(max-width:1024px){
-  .container{
-    top:10px;
-    right:20px;
-  }
-  .bounce{
-    top:0px;
-  }
+.container{
+  top: 17px;
+  right:20px;
+}
+.bounce{
+  top:0px;
+}
 }
 .container:hover .menu
 {
@@ -476,6 +485,11 @@ position: absolute;
   font-size: 19px;
   letter-spacing: 9px;
   margin:0px;
+}
+@media(max-width:900px){
+  .heading{
+    top:115px;
+  }
 }
 @media (max-width: 680px){
 .name{
