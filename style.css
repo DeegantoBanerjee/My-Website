@@ -612,17 +612,27 @@ background-color:#696969;
   }
 }
 .contact-form,.quote-form{
-  width: 80%;
+  width: auto;
   text-align: center;
   margin: 0 auto;
 }
-.form-table a{
-  text-decoration: none;
+.contact-form:active .contact-form-input {
+  display: block !important; 
+  animation: slide-down .5s ease-out;
 }
-.form-table td{
-	padding:30px;
-	border:0px !important;
+@keyframes slide-down {
+  0% { opacity: 0; -webkit-transform: translateY(-100%); }   
+100% { opacity: 1; -webkit-transform: translateY(0); }
 }
+.contact-form h1,.contact-form  p{
+  width:90%;
+  margin:0 auto;
+}
+.quote-form h1, .quote-form p{
+  width:90%;
+  margin:0 auto;
+}
+
 input[type=text],input[type=email]{
 	background: #f1f6fa;
   padding: 40px 80px 28px 28px;
@@ -639,12 +649,6 @@ input::placeholder
 {
 font-size:16px;
 }
-.contact{
-width: 300px;
-}
-.quote{
-width:300px;
-}
 button {
   border: none;
   border-radius: 2px;
@@ -657,56 +661,6 @@ button {
   box-shadow: 0 0 4px #999;
   outline: none;
   cursor:url(cursor.png),pointer !important;
-}
-.contact-form-input.active {
-  animation: scale-display .3s;
-  display: inline-flex;
-}
-.contact-form-input.out {
-  animation: scale-display--reversed .3s;
-  animation-fill-mode: forwards;
-  display: inline-flex;
-}
-.quote-form-input.active {
-  animation: scale-display .3s;
-  display: inline-flex;
-}
-.quote-form-input.out {
-  animation: scale-display--reversed .3s;
-  animation-fill-mode: forwards;
-  display: inline-flex;
-}
-@keyframes scale-display {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-    -webkit-transform: scale(0);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-  }
-}
-@keyframes scale-display--reversed {
-  0% {
-    display: inline-flex;
-    opacity: 1;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-  }
-  99% {
-    display: inline-flex;
-    opacity: 0;
-    transform: scale(0);
-    -webkit-transform: scale(0);
-  }
-  100% {
-    display: none;
-    opacity: 0;
-    transform: scale(0);
-    -webkit-transform: scale(0);
-  }
 }
 .footer{
   padding-top: 187px;
