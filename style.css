@@ -374,6 +374,13 @@ li a{
    overflow-x:hidden;
 }
 @media(max-width:1024px){
+  .container{
+    top:10px;
+    right:20px;
+  }
+  .bounce{
+    top:0px;
+  }
 }
 .container:hover .menu
 {
@@ -487,18 +494,7 @@ position: absolute;
   font-size:12px;
   }
 }
-@media (max-width: 650px){
-.middle-text h1{
-  margin-top: 100px;
-  margin-left: 10px;
-  width: auto;
-}
-.middle-text p{
-  margin-top: 100px;
-  margin-left: 10px;
-  width: auto;
-}
-}
+
 .web-benifit{
   font-size:70px;
   margin-left:530px;
@@ -517,6 +513,18 @@ position: absolute;
   line-height: 40px;
   font-family: 'Libre Baskerville', serif;
 }
+@media (max-width: 1356px){
+  .web-benifit{
+    margin-top: 100px;
+    margin-left: 10px;
+    width: 90%;
+  }
+  .web-benifit-text{
+    margin-top: 100px;
+    margin-left: 10px;
+    width: 90%;
+  }
+  }
 .icons{
   display:grid;
   text-align:center;
@@ -535,16 +543,17 @@ position: absolute;
   grid-template-columns: 1fr 1fr 1fr;
 }
 }
-@media (max-width:500px){
-.icons{
-  grid-template-columns: 1fr;
-}
-} 
 @media (max-width:650px){
   .icons{
     grid-template-columns: 1fr 1fr;
   }
   }
+@media (max-width:500px){
+.icons{
+  grid-template-columns: 1fr;
+}
+} 
+
 .icon-title{
   font-family: 'Libre Baskerville', serif;
   font: weight 100;
@@ -615,24 +624,24 @@ background-color:#696969;
   width: auto;
   text-align: center;
   margin: 0 auto;
+  border: 1px solid #ebe9e8;
+  background-color: transparent;
 }
-.contact-form:active .contact-form-input {
-  display: block !important; 
-  animation: slide-down .5s ease-out;
-}
-@keyframes slide-down {
-  0% { opacity: 0; -webkit-transform: translateY(-100%); }   
-100% { opacity: 1; -webkit-transform: translateY(0); }
-}
-.contact-form h1,.contact-form  p{
-  width:90%;
+.contact-form h1,p{
+  width:80%;
   margin:0 auto;
 }
-.quote-form h1, .quote-form p{
-  width:90%;
+.quote-form h1,p{
+  width:80%;
   margin:0 auto;
 }
-
+.form-table a{
+  text-decoration: none;
+}
+.form-table td{
+	padding:30px;
+	border:0px !important;
+}
 input[type=text],input[type=email]{
 	background: #f1f6fa;
   padding: 40px 80px 28px 28px;
@@ -673,6 +682,7 @@ button {
 }
 .footer div{
   width:60%;
+  margin-bottom: 30px;
 }
 .footer div h1{
   color: #000;
