@@ -446,7 +446,6 @@ canvas{
 @media (max-width:1200px){
 #particles-js{
   background-repeat: no-repeat;
-
 }
 }
 .particles-js-canvas-el{
@@ -455,7 +454,7 @@ position: absolute;
 .heading {
   position: absolute;
   float: left;
-  top: 177px;
+  top: 171px;
   left: 34px;
   width: 52%;
 }
@@ -479,20 +478,18 @@ position: absolute;
   margin:0px;
 }
 @media (max-width: 680px){
-  .name{
-  font-size:60px;
-  }
-  .intro{
-  font-size:14px;
-  }
+.name{
+  font-size:40px;
+}
+.intro{
+  font-size:12px;
+}
+.top{
+  height:90%;
+}  
 }
 @media (max-width: 500px){
-  .name{
-  font-size:40px;
-  }
-  .intro{
-  font-size:12px;
-  }
+
   .web-benifit{
     font-size:40px;
   }
