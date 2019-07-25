@@ -343,30 +343,45 @@ cursor:url(cursor.png),pointer !important;
 ul{
   list-style-type: none;
   padding: 80px 20px 50px;
-   width: 60%;
+   width: 100%;
    margin: 0 auto;
   overflow: hidden;
   background-color: #696969;
   display:flex;
   justify-content:center;
 }
-li{
-  float: left;
-}
 li a{
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding-bottom: 30px;
   text-decoration: none;
 }
-@media(max-width:500px){ 
+li{
+  padding-right: 120px;
+}
+@media(max-width:700px){ 
 ul{
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
   display: block;
+  width:50%;
+  margin-bottom: -75px;
+  
 }
+.bounce{
+  left:0px;
+}
+}
+@media(max-width:400px){
+ul{
+  margin-bottom: -55px;
+}
+li a{
+  font-size: 15px;
+}
+
 }
 .container{
    display: block;
@@ -666,13 +681,13 @@ background-color:#d3d3d3;
 }
 
 .contact-form h1,.contact-form p{
-  width: 44%;
+  width: 70%;
   margin: 0 auto;
   height: 50px;
   padding-top: 20px;
 }
 .quote-form h1,.quote-form p{
-  width: 44%;
+  width: 70%;
   margin: 0 auto;
   height: 50px;
   padding-top: 20px;
@@ -712,6 +727,25 @@ font-size:16px;
   font-size:14px;
 }
 }
+@media(max-width:350px){
+  .contact-form,.quote-form{
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .contact-form img{
+    margin-top:40px;
+}
+  .quote-form img{
+    margin-top:40px;
+}
+  input[type=text],input[type=email]{
+  padding: 20px 20px 20px 20px;
+}
+  input::placeholder{
+  font-size:14px;
+}
+}
 .ripple {
   background-position: center;
   transition: background 0.8s;
@@ -732,7 +766,7 @@ button {
   text-transform: uppercase;
   cursor: pointer;
   color: white;
-  background-color: #2196f3;
+  background-color: #5a5aa0;
   box-shadow: 0 0 4px #999;
   outline: none;
   margin-bottom: 20px;
