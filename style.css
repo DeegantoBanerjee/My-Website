@@ -390,7 +390,7 @@ li a{
    z-index: 9999;
    right: 60px;
    float: right;
-   position: fixed;
+   position: relative;
    box-shadow: none;
    outline: none;
    border:none;
