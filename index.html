@@ -133,13 +133,15 @@ Web Designer/Front End Developer
     <input type="text" id="fname" name="firstname" placeholder="First Name">
     <input type="text" id="lname" name="lastname" placeholder="Last Name">
     <input type="text" id="msg" name="message" placeholder="Message">
+    <br>
 	<button class="ripple">Submit</button>
 </div>
 <div class="quote-form-input" id="quote-form" style="display:block !important">
     <input type="text" id="fullname" name="fullname" placeholder="Full Name">
     <input type="text" id="cname" name="companyname" placeholder="Company Name">
     <input type="email" id="email" name="email" placeholder="Email">
-	<button class="ripple">Submit</button>
+    <br> 
+    <button class="ripple">Submit</button>
 </div>
 </div>
 <div class="footer" id="footer">
@@ -147,13 +149,13 @@ Web Designer/Front End Developer
   <h1>Deeganto</h1><br>
   <a href="#">About</a><br>
   <a href="#">Contact</a><br>
-  <a href="#">Home</a><br>
+  <a href="index.html">Home</a><br>
 </div>
 <div>
   <h1>Connect</h1><br>
   <a href="#">Facebook</a><br>
-  <a href="#">Instagram</a><br>
-  <a href="#">Linkedin</a><br>
+  <a href="https://www.instagram.com/deeganto_banerjee">Instagram</a><br>
+  <a href="https://www.linkedin.com/in/deeganto-banerjee-56385218a/">Linkedin</a><br>
 </div>
 <div>
   <h1>Projects</h1><br>
@@ -186,13 +188,19 @@ $('.contact-form').on('click', function(e) {
   $('.quote-form-input').hide();
   $('.contact-form-input').removeClass('out').addClass('active');
   $('.qoute-form-input').removeClass('active').addClass('out');
-
+  $('.contact-form-input').css("background-color","#f1f6fa");
+  $('.contact-form').css("background-color","#f1f6fa");   
+  $('.quote-form').css("background-color","#fff");
 });
 $('.quote-form').on('click', function(e) {
   $('.quote-form-input').show();
   $('.contact-form-input').hide();
   $('.quote-form-input').removeClass('out').addClass('active');
   $('.contact-form-input').removeClass('active').addClass('out');
+  $('.quote-form').css("background-color","#f1f6fa");
+  $('.quote-form-input').css("background-color","#f1f6fa");
+  $('.contact-form').css("background-color","#fff");
+  
 });
 </script>
 </body>

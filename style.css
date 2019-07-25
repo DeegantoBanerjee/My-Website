@@ -493,8 +493,13 @@ position: absolute;
   .intro{
   font-size:12px;
   }
+  .web-benifit{
+    font-size:40px;
+  }
+  .web-benifit-text{
+    font-size:30px;
+  }
 }
-
 .web-benifit{
   font-size:70px;
   margin-left:530px;
@@ -513,6 +518,14 @@ position: absolute;
   line-height: 40px;
   font-family: 'Libre Baskerville', serif;
 }
+@media (max-width: 500px){
+.web-benifit{
+  font-size:50px;
+}
+.web-benifit-text{
+  font-size:17px;
+}
+}
 @media (max-width: 1356px){
   .web-benifit{
     margin-top: 100px;
@@ -520,9 +533,10 @@ position: absolute;
     width: 90%;
   }
   .web-benifit-text{
-    margin-top: 100px;
+    margin-top: 40px;
     margin-left: 10px;
     width: 90%;
+    
   }
   }
 .icons{
@@ -571,7 +585,7 @@ a,h1,p{
   font-size:16px;
 }
 .grow:hover{
-background-color:#696969;
+background-color:#d3d3d3;
 }
 .grow:hover .icon-title{
   transform:translateY(-18px);
@@ -622,33 +636,50 @@ background-color:#696969;
 }
 .contact-form,.quote-form{
   width: auto;
+  height: 350px;
   text-align: center;
   margin: 0 auto;
-  border: 1px solid #ebe9e8;
-  background-color: transparent;
+}
+.contact-form img{
+  margin-top:15px;
+}
+.quote-form img{
+  margin-top:15px;
+}
+@media(max-width:600px){
+  .contact-form img{
+    margin-top:40px;
+  }
+  .quote-form img{
+    margin-top:40px;
+  }
 }
 .contact-form h1,.contact-form p{
-  width:80%;
-  margin:0 auto;
+  width: 44%;
+  margin: 0 auto;
+  height: 50px;
+  padding-top: 20px;
 }
 .quote-form h1,.quote-form p{
-  width:80%;
-  margin:0 auto;
+  width: 44%;
+  margin: 0 auto;
+  height: 50px;
+  padding-top: 20px;
 }
 .contact-form-input,.quote-form-input{
   text-align:center;
-  width:70%;
+  width:80%;
   margin:0 auto;
-  margin-top:40px;
 }
 input[type=text],input[type=email]{
-	background: #f1f6fa;
+  background: #fff;
   padding: 40px 80px 28px 28px;
-	margin-bottom: 30px;
+  margin-bottom: 25px;
+  margin-top: 25px;
   font-family: Moderat,Avenir,sans-serif;
   font-size: 14px;
   font-weight: 600;
-  width: 100%;
+  width: 90%;
   outline: 0;
   border: 2px solid transparent;
   -webkit-appearance: none;
@@ -656,6 +687,18 @@ input[type=text],input[type=email]{
 input::placeholder
 {
 font-size:16px;
+}
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+.ripple:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
 }
 button {
   border: none;
@@ -665,14 +708,16 @@ button {
   text-transform: uppercase;
   cursor: pointer;
   color: white;
-  background-color: #5a5aa0;
+  background-color: #2196f3;
   box-shadow: 0 0 4px #999;
   outline: none;
-  cursor:url(cursor.png),pointer !important;
+  margin-bottom: 20px;
 }
 .contact-form-input.active {
   animation: scale-display .3s;
   display: inline-flex;
+  padding-top: 20;
+}
 }
 .contact-form-input.out {
   animation: scale-display--reversed .3s;
@@ -682,6 +727,8 @@ button {
 .quote-form-input.active {
   animation: scale-display .3s;
   display: inline-flex;
+  padding-top: 20;
+}
 }
 .quote-form-input.out {
   animation: scale-display--reversed .3s;
@@ -711,6 +758,7 @@ button {
 }
 .footer div{
   width:60%;
+  text-align: center;
   margin-bottom: 30px;
 }
 .footer div h1{
