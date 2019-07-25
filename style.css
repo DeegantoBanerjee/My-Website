@@ -485,10 +485,14 @@ position: absolute;
   font-size:12px;
 }
 .top{
-  height:90%;
+  height:100%;
 }  
 #particles-js{
-  height:90%;
+  height:100%;
+}
+.heading{
+  width:88%;
+  top:200px;
 }
 }
 @media (max-width: 500px){
