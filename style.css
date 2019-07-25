@@ -846,7 +846,7 @@ button {
 @media (max-width:950px){
  .footer{
     grid-template-columns: 1fr 1fr 1fr;
-<<<<<<< HEAD
+
 }
 }
 @media (max-width:650px){
@@ -854,17 +854,11 @@ button {
       grid-template-columns: 1fr;
 }
 }
-=======
-  }
-  }
-  @media (max-width:500px){
-  .footer{
-    grid-template-columns: 1fr;
+
   }
   } 
   @media (max-width:650px){
     .footer{
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
     }
     }
->>>>>>> ad38c07f1f6b99f0389ab3738b355b7a6dcd0c6d
