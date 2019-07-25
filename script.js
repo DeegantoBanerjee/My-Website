@@ -1,7 +1,3 @@
-function title_animate(){
-	
-}
-
 function disappear(){
 	var x = document.getElementById("contact-form");
 	var y = document.getElementById("quote-form");
