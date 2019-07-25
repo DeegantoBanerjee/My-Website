@@ -627,20 +627,19 @@ background-color:#696969;
   border: 1px solid #ebe9e8;
   background-color: transparent;
 }
-.contact-form h1,p{
+.contact-form h1,.contact-form p{
   width:80%;
   margin:0 auto;
 }
-.quote-form h1,p{
+.quote-form h1,.quote-form p{
   width:80%;
   margin:0 auto;
 }
-.form-table a{
-  text-decoration: none;
-}
-.form-table td{
-	padding:30px;
-	border:0px !important;
+.contact-form-input,.quote-form-input{
+  text-align:center;
+  width:70%;
+  margin:0 auto;
+  margin-top:40px;
 }
 input[type=text],input[type=email]{
 	background: #f1f6fa;
@@ -670,6 +669,36 @@ button {
   box-shadow: 0 0 4px #999;
   outline: none;
   cursor:url(cursor.png),pointer !important;
+}
+.contact-form-input.active {
+  animation: scale-display .3s;
+  display: inline-flex;
+}
+.contact-form-input.out {
+  animation: scale-display--reversed .3s;
+  animation-fill-mode: forwards;
+  display: inline-flex;
+}
+.quote-form-input.active {
+  animation: scale-display .3s;
+  display: inline-flex;
+}
+.quote-form-input.out {
+  animation: scale-display--reversed .3s;
+  animation-fill-mode: forwards;
+  display: inline-flex;
+}
+@keyframes scale-display {
+	0% {
+	opacity: 0;
+	transform: scale(0);
+  -webkit-transform: scale(0);
+	}
+100%{
+	opacity: 1;
+	transform: scale(1);
+  -webkit-transform: scale(1);
+	}
 }
 .footer{
   padding-top: 187px;
