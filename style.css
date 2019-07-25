@@ -60,25 +60,6 @@ cursor:url(cursor.png),pointer !important;
 #ud_preloader #ud_dots .ud_dot:last-child {
     margin: 0 0 0 0;
 }
-
-@-webkit-keyframes ud_preloader_1 {
-    0% {
-        background: #fff;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    25% {
-        background: #5a5aa0;
-        -webkit-transform: translateY(-5px);
-        transform: translateY(-5px);
-    }
-    50% {
-        background: #fff;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
-
 @keyframes ud_preloader_1 {
     0% {
         background: #fff;
@@ -91,24 +72,6 @@ cursor:url(cursor.png),pointer !important;
         transform: translateY(-5px);
     }
     50% {
-        background: #fff;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
-
-@-webkit-keyframes ud_preloader_2 {
-    25% {
-        background: #fff;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    50% {
-        background: #5a5aa0;
-        -webkit-transform: translateY(-5px);
-         transform: translateY(-5px);
-    }
-    75% {
         background: #fff;
         -webkit-transform: translateY(0);
         transform: translateY(0);
@@ -132,25 +95,6 @@ cursor:url(cursor.png),pointer !important;
         transform: translateY(0);
     }
 }
-
-@-webkit-keyframes ud_preloader_3 {
-    50% {
-        background: #fff;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    75% {
-        background: #5a5aa0;
-        -webkit-transform: translateY(-5px);
-        transform: translateY(-5px);
-    }
-    100% {
-        background: #fff;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
-
 @keyframes ud_preloader_3 {
     50% {
         background: #fff;
@@ -168,25 +112,6 @@ cursor:url(cursor.png),pointer !important;
          transform: translateY(0);
     }
 }
-
-@-webkit-keyframes ud_preloader_4 {
-    75% {
-        background: #fff;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    100% {
-        background: #5a5aa0;
-        -webkit-transform: translateY(-5px);
-         transform: translateY(-5px);
-    }
-    25% {
-        background: #fff;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
-
 @keyframes ud_preloader_4 {
     75% {
         background: #fff;
@@ -390,7 +315,7 @@ li a{
    z-index: 9999;
    right: 60px;
    float: right;
-   position: fixed;
+   position: relative;
    box-shadow: none;
    outline: none;
    border:none;
