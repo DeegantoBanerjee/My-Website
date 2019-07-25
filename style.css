@@ -487,6 +487,9 @@ position: absolute;
 .top{
   height:90%;
 }  
+#particles-js{
+  height:90%;
+}
 }
 @media (max-width: 500px){
 
