@@ -5,21 +5,21 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body id="top">
- <section id="ud_preloader">
-    <div id="ud_dots">
-        <p>Loading</p>
-        <div class="ud_dot" style=" animation-name:ud_preloader_1;"></div>
-        <div class="ud_dot" style=" animation-name:ud_preloader_2;"></div>
-        <div class="ud_dot" style=" animation-name:ud_preloader_3;"></div>
-        <div class="ud_dot" style=" animation-name:ud_preloader_4;"></div>
-    </div>
-    <div id="ud_bg_left" class="ud_pre_half"></div>
-    <div id="ud_bg_right" class="ud_pre_half"></div>
+<section id="ud_preloader">
+  <div id="ud_dots">
+    <p>Loading</p>
+    <div class="ud_dot" style=" animation-name:ud_preloader_1;"></div>
+    <div class="ud_dot" style=" animation-name:ud_preloader_2;"></div>
+    <div class="ud_dot" style=" animation-name:ud_preloader_3;"></div>
+    <div class="ud_dot" style=" animation-name:ud_preloader_4;"></div>
+  </div>
+  <div id="ud_bg_left" class="ud_pre_half"></div>
+  <div id="ud_bg_right" class="ud_pre_half"></div>
 </section>
 <div class="top" id="hide">
 <script type="text/javascript" src="script.js"></script>
 <div class="menu" id="menu">
-<ul >
+<ul>
   <li align="center"><a class="active" href="#home">Home</a></li>
   <li align="center"><a href="#news">About</a></li>
   <li align="center"><a href="#contact">Contact</a></li>
@@ -28,15 +28,15 @@
 </div>
 <div class="main-header" >
 <div class="animated bounce" onmouseover="title_animate()">
-    <div class="animated bounceInLeft">
-    <p class="logo-text-1" id="logo-text-1">Deeganto</p>
-    </div>
-    <div class="animated bounceInLeft delay-5s"> 
-    <p class="logo-text-2" id="logo-text-2">Front End Developer</p>
-    </div>
+  <div class="animated bounceInLeft">
+  <p class="logo-text-1" id="logo-text-1">Deeganto</p>
+  </div>
+  <div class="animated bounceInLeft delay-5s"> 
+  <p class="logo-text-2" id="logo-text-2">Front End Developer</p>
+  </div>
 </div>
 <button class="container" onclick="show_menu()">
- <div id="transform">
+  <div id="transform">
   <div class="bar1" id="bar1"></div>
   <div class="bar2" id="bar2"></div>
   <div class="bar3" id="bar3"></div>
@@ -165,16 +165,16 @@ Web Designer/Front End Developer
 </div>
 <div>
   <h1>Contact</h1><br>
-  <a href="https://api.whatsapp.com/send?phone=8851797364">8851797364</a><br>
+  <a href="https://api.whatsapp.com/send?phone=918851797364">8851797364</a><br>
 <a href="#">India</a><br>
-<a href="mailto:delhideganto@gmail.com">delhideganto@gmail.com</a><br>
+<a href="mailto:delhideganto@gmail.com" class="email-goto">delhideganto@gmail.com</a><br>
 </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
 $(document).ready(function () {
   $("#ud_dots").
-  delay(2500).
+  delay(1000).
   fadeOut(300, function () {
     $("#ud_bg_left").animate({ left: "-50%" }, 300);
     $("#ud_bg_right").animate({ right: "-50%" }, 300, function () {

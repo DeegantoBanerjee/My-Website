@@ -840,18 +840,16 @@ button {
   color: #0f73ee;
   text-decoration: line-through;
 }
+.email-goto{
+  width:90px;
+}
 @media (max-width:950px){
-  .footer{
+ .footer{
     grid-template-columns: 1fr 1fr 1fr;
-  }
-  }
-  @media (max-width:500px){
-  .footer{
-    grid-template-columns: 1fr;
-  }
-  } 
-  @media (max-width:650px){
-    .footer{
-      grid-template-columns: 1fr 1fr;
-    }
-    }
+}
+}
+@media (max-width:650px){
+.footer{
+      grid-template-columns: 1fr;
+}
+}
