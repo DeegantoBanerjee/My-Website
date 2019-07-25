@@ -646,14 +646,7 @@ background-color:#d3d3d3;
 .quote-form img{
   margin-top:15px;
 }
-@media(max-width:600px){
-  .contact-form img{
-    margin-top:40px;
-  }
-  .quote-form img{
-    margin-top:40px;
-  }
-}
+
 .contact-form h1,.contact-form p{
   width: 44%;
   margin: 0 auto;
@@ -684,9 +677,22 @@ input[type=text],input[type=email]{
   border: 2px solid transparent;
   -webkit-appearance: none;
 }
-input::placeholder
-{
+input::placeholder{
 font-size:16px;
+}
+@media(max-width:600px){
+  .contact-form img{
+    margin-top:40px;
+}
+  .quote-form img{
+    margin-top:40px;
+}
+  input[type=text],input[type=email]{
+  padding: 20px 20px 20px 20px;
+}
+  input::placeholder{
+  font-size:14px;
+}
 }
 .ripple {
   background-position: center;
