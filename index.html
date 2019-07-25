@@ -117,18 +117,18 @@ Web Designer/Front End Developer
 </div>
 </div>
 <div class="forms">
-<div class="contact-form">
+<div class="contact-form" id="contact-form-1">
 <h1 class="form-header" id="form-header">Write a message</h1>
 <img src=" contact.png">
 <p class="form-body" id="form-title">We share the same passion? Write me if you want to know more about my job, my training or any other question!</p>
 </div>
-<div class="quote-form">
+<div class="quote-form" id="quote-form-1">
 <h1 class="form-header" id="form-header">Ask for a quote</h1>
 <img src=" quote.png">
 <p class="form-body" id="form-title">You can also ask me for a free quote for a project and I will be happy to answer you as soon as possible.</p>
 </div>
 </div>
-<div>
+<div style="box-shadow:0 33px 80px rgba(86,111,140,.12); text-align: center;margin: 0 auto; width:80%;">
 <div class="contact-form-input" id="contact-form" style="display:block !important">
     <input type="text" id="fname" name="firstname" placeholder="First Name">
     <input type="text" id="lname" name="lastname" placeholder="Last Name">
@@ -164,7 +164,7 @@ Web Designer/Front End Developer
   <a href="#">Project3</a><br>
 </div>
 <div>
-  <h1>Contact Information</h1><br>
+  <h1>Contact</h1><br>
   <a href="https://api.whatsapp.com/send?phone=8851797364">8851797364</a><br>
 <a href="#">India</a><br>
 <a href="mailto:delhideganto@gmail.com">delhideganto@gmail.com</a><br>
@@ -183,7 +183,7 @@ $(document).ready(function () {
   });
 });
 $('.quote-form-input').hide();
- $('.contact-form-input').hide();
+$('.contact-form-input').hide();
 $('.contact-form').on('click', function(e) {
   $('.contact-form-input').show();
   $('.quote-form-input').hide();
@@ -192,6 +192,9 @@ $('.contact-form').on('click', function(e) {
   $('.contact-form-input').css("background-color","#f1f6fa");
   $('.contact-form').css("background-color","#f1f6fa");   
   $('.quote-form').css("background-color","#fff");
+  $('html, body').animate({
+    scrollTop: $("#contact-form").offset().top
+    }, 800);
 });
 $('.quote-form').on('click', function(e) {
   $('.quote-form-input').show();
@@ -201,7 +204,10 @@ $('.quote-form').on('click', function(e) {
   $('.quote-form').css("background-color","#f1f6fa");
   $('.quote-form-input').css("background-color","#f1f6fa");
   $('.contact-form').css("background-color","#fff");
-  
+  $('.quote-form-input').show();
+  $('html, body').animate({
+    scrollTop: $("#quote-form").offset().top
+  },800);
 });
 </script>
 </body>

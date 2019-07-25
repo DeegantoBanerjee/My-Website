@@ -659,8 +659,12 @@ background-color:#d3d3d3;
   display:grid;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
-  width: 80%;
   text-align: center;
+  box-shadow: 0 33px 80px rgba(86,111,140,.12);
+  width: 80%;
+}
+.forms a{
+  text-decoration: none;
 }
 @media (max-width:800px){
   .forms{
@@ -694,7 +698,7 @@ background-color:#d3d3d3;
 }
 .contact-form-input,.quote-form-input{
   text-align:center;
-  width:80%;
+  width:100%;
   margin:0 auto;
 }
 input[type=text],input[type=email]{
