@@ -2,27 +2,21 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">          
         <link rel="stylesheet" href="projects_style.css">
+        <link rel="stylesheet" href="http://mynameismatthieu.com/WOW/css/libs/animate.css">
     </head>
     <body id="top">
         <div class="top" id="hide">
-                <script type="text/javascript" src="script.js"></script>
+                <script type="text/javascript" src="project_script.js"></script>
+
                     <div class="menu" id="menu">
                     <ul>
-                      <li align="center"><a class="active" href="index.html">Home</a></li>
-                      <li align="center"><a href="#news">About</a></li>
-                      <li align="center"><a href="#contact">Contact</a></li>
-                      <li align="center"><a href="#projects">Projects</a></li>
+                      <li align="center"><a class="animated bounceInUp delay-1s" href="index.html">Home</a></li>
+                      <li align="center"><a class="animated bounceInUp delay-2s" href="#news">About</a></li>
+                      <li align="center"><a class="animated bounceInUp delay-3s" href="#contact">Contact</a></li>
+                      <li align="center"><a class="animated bounceInUp delay-4s" href="#projects">Projects</a></li>
                     </ul>
                     </div>
                     <div class="main-header" >
-                    <div class="animated bounce">
-                      <div class="animated bounceInLeft">
-                      <p class="logo-text-1" id="logo-text-1">Deeganto</p>
-                      </div>
-                      <div class="animated bounceInLeft delay-5s"> 
-                      <p class="logo-text-2" id="logo-text-2">Front End Developer</p>
-                      </div>
-                    </div>
                     <button class="container" onclick="show_menu()">
                       <div id="transform">
                       <div class="bar1" id="bar1"></div>
@@ -32,37 +26,83 @@
                     </button>
                     <div id="particles-js" > 
                     <div class="project_title">
-                    <h1 class="project">
+                    <h1 class="project-title">
                         My Projects
                     </h1>
                     <h2 class="project_sub">
                         My Web Projects
                     </h2>
                     </div>
-                    </div>
-                <script type="text/javascript" src="particles.js"></script>
-                <script type="text/javascript" src="app_project.js"></script>      
+                    </div>  
+                    
+                    </div>     
+                    <script src="particles.js"></script>
+                    <script src="app_project.js"></script>  
                 </div>  
-                </div>    
-                <div class="projects">
-                <div class="project-1">
-                    <img src="amy_ss.png">   
-                    <h2 class="project-1-desc">
-                            Amy Ormston.
-                        </h2>
-                </div>    
-                <div class="project-2">
-                    <img src="karpets_ss.png">   
-                    <h2 class="project-2-desc">
-                            Karpets By RKS.
-                        </h2>
-                </div>      
-                <div class="project-3">
-                    <img src="easymade_ss.png"> 
-                    <h2 class="project-3-desc">
-                            EasyMade.
-                        </h2>  
-                    </div>        
-                </div>
+                </div> 
+                <div>
+                <div class="clicker" onclick="scroll_window()" id="clicker"></div>
+                        <div class="project project-1" id="project-1">                       
+                             <img src="amy.png" class="project-1-img">
+                             <div class="project-1-title">Amy Ormston</div>
+                             <div class="wow fadeInUp">Amy Ormston is a life coach and ancient wisdom core energy healer 
+                                    with natural gifts of helping a person change their life from the deepest rooted 
+                                    pain and trauma, helping you find the truth of who you really are into a life of 
+                                    clarity and freedom
+                             </div>                          
+                                </div>
+                    <div class="project project-2" id="project-2">                       
+                            <img src="karpets_ss.png" class="project-2-img">
+                            <div class="project-2-title">Karpets By RKS</div>
+                            <div class="wow fadeInUp">Our story spreads beyond three generations of the family when our ancestors
+                                 started the business of manufacturing rugs in a small town of Uttar Pradesh, India. Since then we have never
+                                  looked back and went on to become the leaders in the industry. 
+                               </div>
+                               </div>
+                   <div class="project project-3" id="project-3">                       
+                        <img src="easy.png" class="project-3-img">
+                        <div class="project-3-title">Easy Made</div>
+                        <div class="wow fadeInUp">Easy Made are design nomads creating amazing experiences using the Quant method! 
+                            Market progressive, data smart, well-researched solutions for physical and digital projects.
+                            <p class="wow fadeInUp" style="visibility: visible;
+                            animation-name: fadeInUp;
+                            width: 100%;margin-top: -60px;
+                            margin-left: -45px;
+                            font-size: 15px;">
+                            All Projects were made in collaboration with DeepFocus© 
+                            </p>
+                            </div>  
+                           </div>
+                        </div>
+                        <div class="footer" id="footer">
+                                <div class="wow bounceInLeft delay-1s">
+                                  <h1>Deeganto</h1><br>
+                                  <a href="#">About</a><br>
+                                  <a href="#">Contact</a><br>
+                                  <a href="index.html">Home</a><br>
+                                </div>
+                                <div class="wow bounceInLeft delay-2s">
+                                  <h1>Connect</h1><br>
+                                  <a href="#">Facebook</a><br>
+                                  <a href="https://www.instagram.com/deeganto_banerjee">Instagram</a><br>
+                                  <a href="https://www.linkedin.com/in/deeganto-banerjee-56385218a/">Linkedin</a><br>
+                                </div>
+                                <div class="wow bounceInLeft delay-3s">
+                                  <h1>Projects</h1><br>
+                                  <a href="#">Project1</a><br>
+                                  <a href="#">Project2</a><br>
+                                  <a href="#">Project3</a><br>
+                                </div>
+                                <div class="wow bounceInLeft delay-4s">
+                                  <h1>Contact</h1><br>
+                                  <a href="https://api.whatsapp.com/send?phone=918851797364">8851797364</a><br>
+                                <a href="#">India</a><br>
+                                <a href="mailto:delhideganto@gmail.com" class="email-goto">delhideganto@gmail.com</a><br>
+                                </div>
+                                </div>
+                        <script src="http://mynameismatthieu.com/WOW/dist/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
     </body>
 </html>

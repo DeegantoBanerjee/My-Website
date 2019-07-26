@@ -3,6 +3,7 @@
   <title>Deeganto | Web-Developer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">          
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="http://mynameismatthieu.com/WOW/css/libs/animate.css">
 </head>
 <body id="top">
 <section id="ud_preloader">
@@ -20,18 +21,18 @@
 <script type="text/javascript" src="script.js"></script>
 <div class="menu" id="menu">
 <ul>
-  <li align="center"><a class="active" href="index.html">Home</a></li>
-  <li align="center"><a href="#news">About</a></li>
-  <li align="center"><a href="#contact">Contact</a></li>
-  <li align="center"><a href="projects.html">Projects</a></li>
+  <li align="center"><a class="animated bounceInUp delay3s" href="index.html">Home</a></li>
+  <li align="center"><a class="animated bounceInUp delay-2s" href="#news">About</a></li>
+  <li align="center"><a class="animated bounceInUp delay-3s" href="#contact">Contact</a></li>
+  <li align="center"><a class="animated bounceInUp delay-4s" href="projects.html">Projects</a></li>
 </ul>
 </div>
 <div class="main-header" >
 <div class="animated bounce">
-  <div class="animated bounceInLeft">
+  <div class="animated bounceInLeft_2">
   <p class="logo-text-1" id="logo-text-1">Deeganto</p>
   </div>
-  <div class="animated bounceInLeft delay-5s"> 
+  <div class="animated bounceInLeft_2 delay-5s"> 
   <p class="logo-text-2" id="logo-text-2">Front End Developer</p>
   </div>
 </div>
@@ -145,31 +146,35 @@ Web Designer/Front End Developer
 </div>
 </div>
 <div class="footer" id="footer">
-<div>
-  <h1>Deeganto</h1><br>
+<div class="wow bounceInLeft delay-1s">
+  <h1>Deeganto</h1><br> 
   <a href="#">About</a><br>
   <a href="#">Contact</a><br>
   <a href="index.html">Home</a><br>
 </div>
-<div>
+<div class="wow bounceInLeft delay-2s">
   <h1>Connect</h1><br>
   <a href="#">Facebook</a><br>
   <a href="https://www.instagram.com/deeganto_banerjee">Instagram</a><br>
   <a href="https://www.linkedin.com/in/deeganto-banerjee-56385218a/">Linkedin</a><br>
 </div>
-<div>
+<div class="wow bounceInLeft delay-3s" >
   <h1>Projects</h1><br>
-  <a href="#">Project1</a><br>
-  <a href="#">Project2</a><br>
-  <a href="#">Project3</a><br>
+  <a href="C:/Users/Deeganto/Desktop/My-Website/projects.html#project-1">Amy Ormston</a><br>
+  <a href="C:/Users/Deeganto/Desktop/My-Website/projects.html#project-2">Karpets By RKS</a><br>
+  <a href="C:/Users/Deeganto/Desktop/My-Website/projects.html#project-3">Easy Made</a><br>
 </div>
-<div>
+<div class="wow bounceInLeft delay-4s">
   <h1>Contact</h1><br>
   <a href="https://api.whatsapp.com/send?phone=918851797364">8851797364</a><br>
 <a href="#">India</a><br>
 <a href="mailto:delhideganto@gmail.com" class="email-goto">delhideganto@gmail.com</a><br>
 </div>
 </div>
+<script src="http://mynameismatthieu.com/WOW/dist/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
 $(document).ready(function () {
