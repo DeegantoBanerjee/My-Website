@@ -374,7 +374,7 @@ ul{
   margin-bottom: -75px;
 }
 .bounceInUp{
-  animation: none
+  animation: none !important;
 }
 .bounce{
   left:0px;

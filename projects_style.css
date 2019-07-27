@@ -20,8 +20,7 @@ html {
 {
     background-color: #656565;
     width:100%;
-    overflow-x:hidden;
-     overflow-y: hidden;
+    overflow-y:hidden;
 }
 .animated{
     -webkit-animation-duration:1s;
@@ -156,27 +155,29 @@ li a{
   text-decoration: line-through;
 }
 @media(max-width:700px){ 
-ul{
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-  display: block;
-  width:50%;
-  margin-bottom: -75px;
-  
-}
-.bounce{
-  left:0px;
-}
-}
-@media(max-width:400px){
-ul{
-  margin-bottom: -55px;
-}
-li a{
-  font-size: 15px;
-}
-}
+  ul{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    display: block;
+    width:50%;
+    margin-bottom: -75px;
+  }
+  .bounceInUp{
+    animation: none !important;
+  }
+  .bounce{
+    left:0px;
+  }
+  }
+  @media(max-width:400px){
+  ul{
+    margin-bottom: -55px;
+  }
+  li a{
+    font-size: 15px;
+  }
+  }
 .container{
    display: block;
    background: transparent;
@@ -268,7 +269,6 @@ canvas{
   height: 100%;
   background-image: url("fullback.jpg");
   background-size:cover;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   overflow-x: hidden;
@@ -280,6 +280,10 @@ canvas{
 @media (max-width:1200px){
 #particles-js{
   background-repeat: no-repeat;
+}
+canvas{
+  height: auto !important;
+  width: auto !important;
 }
 }
 .particles-js-canvas-el{
@@ -301,9 +305,74 @@ position: absolute;
     float: left;
     margin-bottom: -6px;
   }
-  .disappear{
-    display: none;
-  }
+  @media(max-width:600px){
+    .clicker{
+
+    }
+    .project-1-img,.project-2-img,.project-3-img{
+      height: auto;
+      width: 90%;
+    }
+    .project-1-title{
+    writing-mode: horizontal-tb !important;
+    left: 90px !important;
+    font-size: 35px !important;
+    top: 125px !important;
+    }
+    .project-1-title::before{
+    width: 100% !important;
+    height: 6% !important;
+    }
+    .project-1:hover .project-1-title::before{
+      transform: scaleY(1) !important;
+    }
+    .project-2-title{
+    writing-mode: horizontal-tb !important;
+    left: 60px !important;
+    font-size: 35px !important;
+    }
+    .project-2-title::before{
+    width: 100% !important;
+    height: 6% !important;
+    }
+    .project-3-title{
+    writing-mode: horizontal-tb !important;
+    left: 110px !important;
+    top: 105px !important;
+    font-size: 35px !important;
+    }
+    .project-3-title::before{
+    width: 100% !important;
+    height: 6% !important;
+    }
+    .fadeInUp{
+      top: 37px !important;
+      width: 60% !important;
+      float: left;
+      left: 85px !important;
+    }
+    .fadeInUp_2{
+
+    }
+    .fadeInUp_3{
+
+    }
+    .credits{
+      margin-top: 0px !important;
+      top: 124px !important;
+      width: 100% !important;
+      float: left;
+      left: 50px !important;
+    }
+  }  
+  .credits{
+        visibility: visible;
+        animation-name: fadeInUp;
+        width: 100%;
+        margin-top: -60px;
+        margin-left: -45px;
+        font-size: 15px;
+      }
   .project_sub{
     margin-left: 35px !important;
     width: 100%;
@@ -320,12 +389,10 @@ position: absolute;
     width: 0;
     height: 0;
     bottom: 40px;
+    margin: 0 auto;
     z-index: 9999999;
-    left: 735px;
-    position: fixed;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
-    mix-blend-mode: difference;
     border-top: 49px solid #dcdcdc;
   }
   .project{
