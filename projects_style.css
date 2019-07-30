@@ -223,14 +223,14 @@ li a{
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  background-color:#fefefe;
+  background-color:#0f73ee;
   margin: 6px 0;
   transition: 0.4s;
 }
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
-  background-color:#fefefe;
+  background-color:#0f73ee;
 }
 .change .bar2 {
 	opacity: 0;
@@ -238,14 +238,14 @@ li a{
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
-  background-color:#fefefe;
+  background-color:#0f73ee;
 }
 .container:hover .bar1
 {
 	transform:translate(9px,0px);
 }
 .container:hover .bar2{
-  background-color:#fefefe;
+  background-color:#0f73ee;
 }
 .container:hover .bar3
 {
@@ -267,7 +267,7 @@ canvas{
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("fullback.jpg");
+  background-image: url("projects.jpg");
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -294,92 +294,25 @@ position: absolute;
     float: left;
     top: 272px;
     left: 590px;
+    color:#0f73ee;
     width: 52%;
   }
   .project-title{
     font-size: 80px;
-    color: #fefefe;
+    color:#0f73ee;
     letter-spacing: -3px;
     font-weight: 400;
     margin:0px;
     float: left;
     margin-bottom: -6px;
   }
-  @media(max-width:600px){
-    .clicker{
-
-    }
-    .project-1-img,.project-2-img,.project-3-img{
-      height: auto;
-      width: 90%;
-    }
-    .project-1-title{
-    writing-mode: horizontal-tb !important;
-    left: 90px !important;
-    font-size: 35px !important;
-    top: 125px !important;
-    }
-    .project-1-title::before{
-    width: 100% !important;
-    height: 6% !important;
-    }
-    .project-1:hover .project-1-title::before{
-      transform: scaleY(1) !important;
-    }
-    .project-2-title{
-    writing-mode: horizontal-tb !important;
-    left: 60px !important;
-    font-size: 35px !important;
-    }
-    .project-2-title::before{
-    width: 100% !important;
-    height: 6% !important;
-    }
-    .project-3-title{
-    writing-mode: horizontal-tb !important;
-    left: 110px !important;
-    top: 105px !important;
-    font-size: 35px !important;
-    }
-    .project-3-title::before{
-    width: 100% !important;
-    height: 6% !important;
-    }
-    .fadeInUp{
-      top: 37px !important;
-      width: 60% !important;
-      float: left;
-      left: 85px !important;
-    }
-    .fadeInUp_2{
-
-    }
-    .fadeInUp_3{
-
-    }
-    .credits{
-      margin-top: 0px !important;
-      top: 124px !important;
-      width: 100% !important;
-      float: left;
-      left: 50px !important;
-    }
-  }  
-  .credits{
-        visibility: visible;
-        animation-name: fadeInUp;
-        width: 100%;
-        margin-top: -60px;
-        margin-left: -45px;
-        font-size: 15px;
-      }
   .project_sub{
     margin-left: 35px !important;
     width: 100%;
     float: left;
     font-weight: 700;
     line-height: 40px;
-    color: #fefefe;
+    color: #0f73ee;
     font-size: 19px;
     left: 23px;
     letter-spacing: 9px;

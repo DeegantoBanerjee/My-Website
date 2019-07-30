@@ -1,0 +1,8 @@
+svg {
+    display: inline-block;
+    width: 150px;
+    stroke: $color1;
+    &:hover {
+      stroke: $color2;
+    }
+  }

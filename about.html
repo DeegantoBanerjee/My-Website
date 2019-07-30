@@ -1,21 +1,197 @@
 <html>
     <head>
-        <title>
-            About Deeganto
-        </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="animate.css">
+    <title>
+        About Deeganto
+    </title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="animate.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-     <div class="name-desc">
+    <div id="particles-js">
+        <script src="particles.js"></script>
+        <script src="app_about.js"></script>  
+        <div class="head-title about"> 
+        <div class="name animated fadeInDown delay-1s">
+        Deeganto
+        </div>  
+        <div class="desc animated fadeInDown delay-2s">
+        Web Designer        
+        </div>
+        <div class="next-btn next">  
+        <div class="arrow-text animated">
+            who is Deeganto ?
+        </div>
+        <div class="scroll-btn-line"></div>    
+        <div class="arrow"></div> 
+        </div>
+        </div>
+        <div class="about-me-1 about">          
+        <div class="prev-btn-1 prev">
+        <div class="arrow-text animated">
+            previous
+        </div>  
+        <div class="scroll-btn-line"></div>    
+        <div class="arrow"></div>
+        </div>
+        <div class="content-1 content">
         <h1>
-            Deeganto
+            Who is Deeganto ?
         </h1>
-        <p>
-            Web Designer        
-        </p>
-
-     </div>   
-
+        <h4> 
+            I am a 21yr old Student, currently studying in DIT University,<br>
+            Dehradun, India. I hate Coding and developing. I love<br>
+            listening to Good Music and playing Games. I am the Student<br>
+            who never pays attention in class, most of my learning was <br> 
+            done in my Hostel Room and my internship at <a href="https://deepfocus.in/">DeepFocus</a>.
+        </h4>
+        <h4>
+           I like Clean and simple Websites.Sometimes i like to develop and design Website
+           and Web Applications.
+           I also like to do little photography.
+        </h4>
+        <h2>
+            Connect with me.
+            <a href="mailto:delhideganto@gmail.com" class="email-goto">delhideganto@gmail.com</a><br>
+            <a href="https://www.linkedin.com/in/deeganto-banerjee-56385218a/">Linkedin</a><br>
+            <a href="https://www.instagram.com/deeganto_banerjee">Instagram</a><br>
+            <a href="https://api.whatsapp.com/send?phone=918851797364">8851797364</a><br>
+        </h2>
+        </div>
+        <div class="next-btn-1 next">
+        <div class="arrow-text animated">
+            next 
+        </div>      
+        <div class="scroll-btn-line"></div>    
+        <div class="arrow"></div>
+        </div>    
+        </div>
+        <div class="about-me-2 about">          
+        <div class="prev-btn-2 prev">
+        <div class="arrow-text animated">
+            previous
+        </div>  
+        <div class="scroll-btn-line"></div>    
+        <div class="arrow"></div>
+        </div>
+        <div class="content-2 content">
+        <h1>
+            Skills
+        </h1>
+        <h2>Website Designing.</h2>
+        <h4> 
+            HTML, CSS, JavaScript, Jquery.<br>
+            Angular 7 and React Framework.<br>
+            Wordpress.<br>
+            JSP and Servelet.
+        </h4>
+        <h2>Programming</h2>
+        <h4>
+            C++, Java, Advanced Java.  
+        </h4>
+        <h2>Designing</h2>
+        <h4>
+            Photoshop, Illustrator, SVGs.
+        </h4>
+        </div>
+        <div class="next-btn-2 next">
+        <div class="arrow-text animated">
+            next 
+        </div>      
+        <div class="scroll-btn-line"></div>    
+        <div class="arrow"></div>
+        </div>    
+        </div>
+        <div class="about-me-3 about">
+        <div class="prev-btn-3 prev">
+        <div class="arrow-text animated">
+            previous
+        </div>      
+        <div class="scroll-btn-line"></div>    
+        <div class="arrow"></div>
+        </div>
+        <div class="content-3 content">
+        <h1>
+            Experience and Certifications
+        </h1>
+        <h2>Website Designing</h2>
+        <h4> 
+            2 Month WordPress and Website Designing Internship from <a href="https://deepfocus.in/"  target="_blank">DeepFocus</a><br>
+        </h4>
+        <h2>Programming</h2>
+        <h4>
+            Core Java Certification Course from NIIT.<br>
+            Advanced Java Certification Course from RCPL  
+        </h4>
+        </div> 
+        <div class="next-btn-3 next">
+        <div class="arrow-text animated">
+            next 
+        </div>              
+        <div class="scroll-btn-line"></div>    
+        <div class="arrow"></div>
+        </div>
+        </div>
+        <div class="about-me-4 about"> 
+        <div class="prev-btn-4 prev">  
+        <div class="arrow-text animated">
+            previous
+        </div>
+        <div class="scroll-btn-line"></div>   
+        <div class="arrow"></div>
+        </div>
+        <div class="content-4 content">
+        <h1>
+            Projects
+        </h1>
+        <h2>Angular 7</h2>
+        <h4> 
+            Automated Report Generator for College using Angular 7.
+        </h4>
+        </div>
+        </div>
+    </div>  
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".about-me-1").hide();
+    $(".about-me-2").hide();
+    $(".about-me-3").hide();
+    $(".about-me-4").hide();
+    $(".next-btn").click(function(){
+        $(".head-title").fadeOut();
+        $(".about-me-1").fadeIn();
+    });
+    $(".prev-btn-1").click(function(){
+        $(".about-me-1").hide();
+        $(".head-title").fadeIn();
+    });
+    $(".next-btn-1").click(function(){
+        $(".about-me-1").fadeOut();
+        $(".about-me-2").fadeIn();
+    });
+    $(".prev-btn-2").click(function(){
+        $(".about-me-1").fadeIn();
+        $(".about-me-2").fadeOut();
+    });
+    $(".next-btn-2").click(function(){
+        $(".about-me-3").fadeIn();
+        $(".about-me-2").fadeOut();
+    });
+    $(".prev-btn-3").click(function(){
+        $(".about-me-2").fadeIn();
+        $(".about-me-3").fadeOut();
+    });
+    $(".next-btn-3").click(function(){
+        $(".about-me-4").fadeIn();
+        $(".about-me-3").fadeOut();
+    });
+    $(".prev-btn-4").click(function(){
+        $(".about-me-3").fadeIn();
+        $(".about-me-4").fadeOut();
+    });
+});
+</script>    
+
 </html>
