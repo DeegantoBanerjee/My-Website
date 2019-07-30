@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
-body{
-    margin: 0;
+html,body{
+  cursor:url(cursor.png),pointer !important;  
+  margin: 0;
 }
 .animated.delay-1s {
     -webkit-animation-delay: 4s;
@@ -125,7 +126,6 @@ body{
   text-align: center;
   width: 100%;
 }
-
 .next .arrow-text{
   float: right;
   right: 85px;
@@ -236,7 +236,7 @@ and (max-width : 480px) {
     width:auto;
     margin: 20px;
     left:0;
-    font-size:17px;
+    font-size:17px !important;
   }
   .next{
     top:65%;

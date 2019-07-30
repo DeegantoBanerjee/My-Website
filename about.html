@@ -1,5 +1,46 @@
 <html>
     <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".about-me-1").hide();
+    $(".about-me-2").hide();
+    $(".about-me-3").hide();
+    $(".about-me-4").hide();
+    $(".next-btn").click(function(){
+        $(".head-title").fadeOut();
+        $(".about-me-1").fadeIn();
+    });
+    $(".prev-btn-1").click(function(){
+        $(".about-me-1").hide();
+        $(".head-title").fadeIn();
+    });
+    $(".next-btn-1").click(function(){
+        $(".about-me-1").fadeOut();
+        $(".about-me-2").fadeIn();
+    });
+    $(".prev-btn-2").click(function(){
+        $(".about-me-1").fadeIn();
+        $(".about-me-2").fadeOut();
+    });
+    $(".next-btn-2").click(function(){
+        $(".about-me-3").fadeIn();
+        $(".about-me-2").fadeOut();
+    });
+    $(".prev-btn-3").click(function(){
+        $(".about-me-2").fadeIn();
+        $(".about-me-3").fadeOut();
+    });
+    $(".next-btn-3").click(function(){
+        $(".about-me-4").fadeIn();
+        $(".about-me-3").fadeOut();
+    });
+    $(".prev-btn-4").click(function(){
+        $(".about-me-3").fadeIn();
+        $(".about-me-4").fadeOut();
+    });
+});
+</script>    
     <title>
         About Deeganto
     </title>
@@ -19,8 +60,8 @@
         Web Designer        
         </div>
         <div class="next-btn next">  
-        <div class="arrow-text animated">
-            who is Deeganto ?
+        <div class="arrow-text animated" style="right:25px; bottom:7px">
+        find out.
         </div>
         <div class="scroll-btn-line"></div>    
         <div class="arrow"></div> 
@@ -39,14 +80,14 @@
             Who is Deeganto ?
         </h1>
         <h4> 
-            I am a 21yr old Student, currently studying in DIT University,<br>
+            I am a 21yr old College Student, currently studying in DIT University,<br>
             Dehradun, India. I hate Coding and developing. I love<br>
             listening to Good Music and playing Games. I am the Student<br>
             who never pays attention in class, most of my learning was <br> 
             done in my Hostel Room and my internship at <a href="https://deepfocus.in/">DeepFocus</a>.
         </h4>
         <h4>
-           I like Clean and simple Websites.Sometimes i like to develop and design Website
+           I like clean and simple Websites.Sometimes i like to develop and design Website
            and Web Applications.
            I also like to do little photography.
         </h4>
@@ -152,46 +193,4 @@
         </div>
     </div>  
     </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-    $(".about-me-1").hide();
-    $(".about-me-2").hide();
-    $(".about-me-3").hide();
-    $(".about-me-4").hide();
-    $(".next-btn").click(function(){
-        $(".head-title").fadeOut();
-        $(".about-me-1").fadeIn();
-    });
-    $(".prev-btn-1").click(function(){
-        $(".about-me-1").hide();
-        $(".head-title").fadeIn();
-    });
-    $(".next-btn-1").click(function(){
-        $(".about-me-1").fadeOut();
-        $(".about-me-2").fadeIn();
-    });
-    $(".prev-btn-2").click(function(){
-        $(".about-me-1").fadeIn();
-        $(".about-me-2").fadeOut();
-    });
-    $(".next-btn-2").click(function(){
-        $(".about-me-3").fadeIn();
-        $(".about-me-2").fadeOut();
-    });
-    $(".prev-btn-3").click(function(){
-        $(".about-me-2").fadeIn();
-        $(".about-me-3").fadeOut();
-    });
-    $(".next-btn-3").click(function(){
-        $(".about-me-4").fadeIn();
-        $(".about-me-3").fadeOut();
-    });
-    $(".prev-btn-4").click(function(){
-        $(".about-me-3").fadeIn();
-        $(".about-me-4").fadeOut();
-    });
-});
-</script>    
-
 </html>
