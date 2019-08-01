@@ -48,7 +48,24 @@
         About Deeganto
     </title>
     </head>
-    <body>
+    <body id="top">
+    <div class="top" id="hide">
+        <script type="text/javascript" src="about_script.js"></script>
+        <div class="menu" id="menu">
+    <ul>
+        <li align="center"><a class="animated bounceInUp" href="index.html">Home</a></li>
+        <li align="center"><a class="animated bounceInUp" href="about.html">About</a></li>
+        <li align="center"><a class="animated bounceInUp" href="#contact">Contact</a></li>
+        <li align="center"><a class="animated bounceInUp" href="projects.html">Projects</a></li>
+    </ul>
+    </div>
+    <button class="container" onclick="show_menu()">
+        <div id="transform">
+        <div class="bar1" id="bar1"></div>
+        <div class="bar2" id="bar2"></div>
+        <div class="bar3" id="bar3"></div>
+        </div>
+    </button>
     <div id="particles-js">
         <script src="particles.js"></script>
         <script src="app_about.js"></script>  
@@ -194,6 +211,5 @@
         </div>
         </div>
     </div> 
-   
     </body>
 </html>

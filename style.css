@@ -177,10 +177,10 @@ a{
 }
 .bounce{
   display: block;
-  width: 80px;
+  width: 81px;
   top: 43px;
   left: 20px;
-  height: 80px;
+  height: 81px;
   background-image: url(logo.png);
   background-position: inherit;
   z-index: 9999;

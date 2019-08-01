@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
 html,body{
   cursor:url(cursor.png),pointer !important;  
+  background-color: #696969;
   margin: 0;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 .animated.delay-1s {
     -webkit-animation-delay: 4s;
@@ -63,13 +68,163 @@ html,body{
       transform: translate3d(0, 0, 0);
     }
   }
-.logo-cont{
-    position: absolute;
-}
-#border_2{
-    stroke-dasharray: 10;
-    stroke-dashoffset: 10;
-}
+  .menu{
+    display:none;
+    margin-bottom: -240px;
+    overflow-x:hidden;
+  }
+  ul{
+    list-style-type: none;
+    padding: 80px 20px 50px;
+     width: 100%;
+     margin: 0 auto;
+    overflow: hidden;
+    background-color: #696969;
+    display:flex;
+    justify-content:center;
+  }
+  li{
+    font-size:25px;
+  }
+  li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+    text-decoration: none;
+  }
+  @keyframes bounceInUp {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 3000px, 0);
+      transform: translate3d(0, 3000px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, -20px, 0);
+      transform: translate3d(0, -20px, 0);
+    }
+  
+    75% {
+      -webkit-transform: translate3d(0, 10px, 0);
+      transform: translate3d(0, 10px, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(0, -5px, 0);
+      transform: translate3d(0, -5px, 0);
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .bounceInUp {
+    padding-right: 120px;
+    -webkit-animation-name: bounceInUp;
+    animation-name: bounceInUp;
+  }
+  .bounceInUp:hover{
+  
+    text-decoration: line-through;
+  }
+  @media(max-width:700px){ 
+  ul{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    margin-top: -40px !important;
+    display: block;
+    width:50%;
+    margin-bottom: -75px;
+  }
+  .bounceInUp{
+    animation: none !important;
+  }
+  .bounce{
+    left:0px;
+  }
+  .menu{
+    margin-bottom: -200px;
+  }
+  }
+  @media(max-width:400px){
+  ul{
+    margin-bottom: -55px;
+  }
+  li a{
+    font-size: 15px;
+  }
+  }
+  .container{
+     display: block;
+     background: transparent;
+     top: 60px;
+     z-index: 9999;
+     right: 60px;
+     float: right;
+     width:50px;
+     position: relative;
+     box-shadow: none;
+     outline: none;
+     border:none;
+     cursor: url(cursor.png),pointer !important;
+     overflow-x:hidden;
+  }
+  @media(max-width:1024px){
+  .container{
+    top: 17px;
+    right:20px;
+  }
+  .bounce{
+    top:0px;
+  }
+  }
+  .container:hover .menu
+  {
+    display:block;
+  }
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color:#fefefe;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    background-color:#fefefe;
+  }
+  .change .bar2 {
+    opacity: 0;
+  }
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color:#fefefe;
+  }
+  .container:hover .bar1
+  {
+    transform:translate(9px,0px);
+  }
+  .container:hover .bar2{
+    background-color:#fefefe;
+  }
+  .container:hover .bar3
+  {
+    transform:translate(9px,0px);
+  }
 .fadeInDown {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
