@@ -129,7 +129,7 @@ Web Designer/Front End Developer
 <p class="form-body" id="form-title">You can also ask me for a free quote for a project and I will be happy to answer you as soon as possible.</p>
 </div>
 </div>
-<div style="box-shadow:0 33px 80px rgba(86,111,140,.12); text-align: center;margin: 0 auto; width:80%;">
+<div style="box-shadow:0 33px 80px rgba(86,111,140,.12); text-align: center;margin: 0 auto; width:80%;" class="input-container" >
 <div class="contact-form-input" id="contact-form" style="display:block !important">
     <input type="text" id="fname" name="firstname" placeholder="First Name">
     <input type="text" id="lname" name="lastname" placeholder="Last Name">
@@ -141,6 +141,8 @@ Web Designer/Front End Developer
     <input type="text" id="fullname" name="fullname" placeholder="Full Name">
     <input type="text" id="cname" name="companyname" placeholder="Company Name">
     <input type="email" id="email" name="email" placeholder="Email">
+    <input type="text" id="msg" name="message" placeholder="Phone Number">
+    <input type="text" id="msg" name="message" placeholder="Message">
     <br> 
     <button class="ripple">Submit</button>
 </div>
@@ -196,8 +198,8 @@ $('.contact-form').on('click', function(e) {
   $('.contact-form').css("background-color","#f1f6fa");   
   $('.quote-form').css("background-color","#fff");
   $('html, body').animate({
-    scrollTop: $("#contact-form").offset().top
-    }, 800);
+    scrollTop: $(".input-container").offset().top
+    }, 0);
 });
 $('.quote-form').on('click', function(e) {
   $('.quote-form-input').show();
@@ -209,8 +211,8 @@ $('.quote-form').on('click', function(e) {
   $('.contact-form').css("background-color","#fff");
   $('.quote-form-input').show();
   $('html, body').animate({
-    scrollTop: $("#quote-form").offset().top
-  },800);
+    scrollTop: $(".input-container").offset().top
+  },0);
 });
 </script>
 </body>
