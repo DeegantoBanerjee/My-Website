@@ -2,48 +2,48 @@
     <head>
         <link rel="stylesheet" href="about.css">
         <link rel="stylesheet" href="animate.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $(".about-me-1").hide();
+            $(".about-me-2").hide();
+            $(".about-me-3").hide();
+            $(".about-me-4").hide();
+            $(".next-btn").click(function(){
+                $(".head-title").fadeOut();
+                $(".about-me-1").fadeIn();
+            });
+            $(".prev-btn-1").click(function(){
+                $(".about-me-1").hide();
+                $(".head-title").fadeIn();
+            });
+            $(".next-btn-1").click(function(){
+                $(".about-me-1").fadeOut();
+                $(".about-me-2").fadeIn();
+            });
+            $(".prev-btn-2").click(function(){
+                $(".about-me-1").fadeIn();
+                $(".about-me-2").fadeOut();
+            });
+            $(".next-btn-2").click(function(){
+                $(".about-me-3").fadeIn();
+                $(".about-me-2").fadeOut();
+            });
+            $(".prev-btn-3").click(function(){
+                $(".about-me-2").fadeIn();
+                $(".about-me-3").fadeOut();
+            });
+            $(".next-btn-3").click(function(){
+                $(".about-me-4").fadeIn();
+                $(".about-me-3").fadeOut();
+            });
+            $(".prev-btn-4").click(function(){
+                $(".about-me-3").fadeIn();
+                $(".about-me-4").fadeOut();
+            });
+        });
+        </script>     
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-    $(".about-me-1").hide();
-    $(".about-me-2").hide();
-    $(".about-me-3").hide();
-    $(".about-me-4").hide();
-    $(".next-btn").click(function(){
-        $(".head-title").fadeOut();
-        $(".about-me-1").fadeIn();
-    });
-    $(".prev-btn-1").click(function(){
-        $(".about-me-1").hide();
-        $(".head-title").fadeIn();
-    });
-    $(".next-btn-1").click(function(){
-        $(".about-me-1").fadeOut();
-        $(".about-me-2").fadeIn();
-    });
-    $(".prev-btn-2").click(function(){
-        $(".about-me-1").fadeIn();
-        $(".about-me-2").fadeOut();
-    });
-    $(".next-btn-2").click(function(){
-        $(".about-me-3").fadeIn();
-        $(".about-me-2").fadeOut();
-    });
-    $(".prev-btn-3").click(function(){
-        $(".about-me-2").fadeIn();
-        $(".about-me-3").fadeOut();
-    });
-    $(".next-btn-3").click(function(){
-        $(".about-me-4").fadeIn();
-        $(".about-me-3").fadeOut();
-    });
-    $(".prev-btn-4").click(function(){
-        $(".about-me-3").fadeIn();
-        $(".about-me-4").fadeOut();
-    });
-});
-</script>    
     <title>
         About Deeganto
     </title>
@@ -60,7 +60,9 @@ $(document).ready(function(){
         Web Designer        
         </div>
         <div class="next-btn next">  
-        <div class="arrow-text animated" style="right:25px; bottom:7px">
+        <div class="arrow-text find-out" style="right: -11px;
+        writing-mode: vertical-rl;
+        bottom: 29px;">
         find out.
         </div>
         <div class="scroll-btn-line"></div>    
@@ -191,6 +193,7 @@ $(document).ready(function(){
         </h4>
         </div>
         </div>
-    </div>  
+    </div> 
+   
     </body>
 </html>
