@@ -6,11 +6,11 @@ height:100%;
 background-color:#fefefe;
 scroll-behavior: smooth;
 margin: 0px !important;
-cursor:url(cursor.png),pointer !important;
+cursor:url(../img/cursor.png),pointer !important;
 }
 a{
   font-size:25px;
-  cursor: url(cursor.png),pointer !important;
+  cursor: url(../img/cursor.png),pointer !important;
  }
  a,h1,p{
    font-family: 'Libre Baskerville', serif;
@@ -181,7 +181,7 @@ a{
   top: 43px;
   left: 20px;
   height: 81px;
-  background-image: url(logo.png);
+  background-image: url(../img/logo.png);
   background-position: inherit;
   z-index: 9999;
   float: left;
@@ -398,7 +398,7 @@ li a{
    box-shadow: none;
    outline: none;
    border:none;
-   cursor: url(cursor.png),pointer !important;
+   cursor: url(../img/cursor.png),pointer !important;
    overflow-x:hidden;
 }
 @media(max-width:1024px){
@@ -457,13 +457,12 @@ canvas{
   vertical-align: bottom; 
   overflow-x:hidden;
 } 
-
 #particles-js{ 
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: #cecece;
-  background-image: url("gogol.png");
+  background-image: url("../img/gogol.png");
   background-size:contain;
   background-position: bottom;
   background-repeat: no-repeat;
