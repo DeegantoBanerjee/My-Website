@@ -274,62 +274,25 @@ canvas{
 .particles-js-canvas-el{
 position: absolute;
 }
-.heading {
-  position: absolute;
-  float: left;
-  top: 171px;
-  left: 34px;
-  width: 52%;
-}
-.name{
-  font-size: 80px;
-  color: #fff;
-  letter-spacing: -3px;
-  font-weight: 400;
-  margin:0px;
-  float: left;
-  margin-bottom: -6px;
-}
-.intro{
-  width: 100%;
-  float:left;
-  font-weight: 700;
-  line-height: 40px;
-  color: #fff;
-  font-size: 19px;
-  letter-spacing: 9px;
-  margin:0px;
-}
-@media(max-width:900px){
-  .heading{
-    top:115px;
-  }
-}
 @media (max-width: 680px){
-.name{
-  font-size:40px;
-}
-.intro{
-  font-size:12px;
-}
 .top{
   height:100%;
 }  
 #particles-js{
   height:100%;
 }
-.heading{
-  width:88%;
-  top:200px;
+.project_title{
+  left:6% !important;
 }
 }
 .project_title {
-    position: absolute;
-    float: left;
-    top: 272px;
-    left: 590px;
-    color:#0f73ee;
-    width: 52%;
+  position: absolute;
+  margin: 0 auto;
+  height: fit-content;
+  top: 40%;
+  left: 40%;
+  color: #0f73ee;
+  width: fit-content;
   }
   .project-title{
     font-size: 80px;

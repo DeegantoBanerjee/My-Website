@@ -5,40 +5,125 @@
         <link rel="stylesheet" href="css/animate.css">
     </head>
     <body id="top">
-        <div class="top" id="hide">
-                <script type="text/javascript" src="js/contact_script.js"></script>
-                    <div class="menu" id="menu">
-                    <ul>
-                      <li align="center"><a class="animated bounceInUp delay-1s" href="index.html">Home</a></li>
-                      <li align="center"><a class="animated bounceInUp delay-2s" href="about.html">About</a></li>
-                      <li align="center"><a class="animated bounceInUp delay-3s" href="#contact">Contact</a></li>
-                      <li align="center"><a class="animated bounceInUp delay-4s" href="projects.html">Projects</a></li>
-                    </ul>
-                    </div>
-        <div class="main-header" >
-                    <button class="container" onclick="show_menu()">
-                      <div id="transform">
-                      <div class="bar1" id="bar1"></div>
-                      <div class="bar2" id="bar2"></div>
-                      <div class="bar3" id="bar3"></div>
-                     </div>
-                    </button>
-                    <div id="particles-js" >
-                        <div class="title">HELLO</div>
-                    </div>
-                        <script type="text/javascript" src="js/particles.js"></script>
-                        <script type="text/javascript" src="js/app_contact.js"></script>
-
-
-
+    <div class="top" id="hide">
+            <script type="text/javascript" src="js/contact_script.js"></script>
+            <div class="menu" id="menu">
+            <ul>
+              <li align="center"><a class="animated bounceInUp" href="index.html">Home</a></li>
+              <li align="center"><a class="animated bounceInUp" href="about.html">About</a></li>
+              <li align="center"><a class="animated bounceInUp " href="contact.html">Contact</a></li>
+              <li align="center"><a class="animated bounceInUp" href="projects.html">Projects</a></li>
+            </ul>
+            </div>
+            <div class="main-header" >
+            <button class="container" onclick="show_menu()">
+              <div id="transform">
+              <div class="bar1" id="bar1"></div>
+              <div class="bar2" id="bar2"></div>
+              <div class="bar3" id="bar3"></div>
+             </div>
+            </button>
+        <div id="particles-js" >
+                <div class="top-text">
+                    <span class="top-span">HELLO</span>
+                    <span class="bottom-span">Want to know more about Me ?</span>
+            </div>
+            <div class="contact-info">
+                    <p class="contact-text">you can always find me at</p>
+                    <a href="mailto:delhideganto@gmail.com" class="email">delhideganto(at)gmail.com</a><br>
+                    <a href="https://api.whatsapp.com/send?phone=918851797364" class="number">8851797364</a>
+            </div>
+            <div class="form-container">
+         <div class="forms">
+             <a href="#in-container">
+<div class="contact-form" id="contact-form-1">
+<h1 class="form-header" id="form-header">Write a message</h1>
+<img src="img/contact-2.png">
+<p class="form-body" id="form-title">We share the same passion? Write me if you want to know more about my job, my training or any other question!</p>
+</div>
+</a>
+<a href="#in-container">
+<div class="quote-form" id="quote-form-1">
+<h1 class="form-header" id="form-header">Ask for a quote</h1>
+<img src="img/quote-2.png">
+<p class="form-body" id="form-title">You can also ask me for a free quote for a project and I will be happy to answer you as soon as possible.</p>
+</div>
+</a>
+</div>
+<div style="text-align:center;margin: 0 auto; width:80%;" id="in-container" >
+<div class="contact-form-input" id="contact-form">
+    <input type="text" id="fname" name="firstname" placeholder="First Name">
+    <input type="text" id="lname" name="lastname" placeholder="Last Name">
+    <input type="text" id="msg" name="message" placeholder="Message">
+    <br>
+	<button class="ripple">Submit</button>
+</div>
+<div class="quote-form-input" id="quote-form">
+    <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+    <input type="text" id="cname" name="companyname" placeholder="Company Name">
+    <input type="email" id="email" name="email" placeholder="Email">
+    <input type="text" id="msg" name="message" placeholder="Phone Number">
+    <input type="text" id="msg" name="message" placeholder="Message">
+    <br> 
+    <button class="ripple">Submit</button>
+</div>
+</div>
+</div>
+<div class="footer" id="footer">
+        <div >
+          <h1>Deeganto</h1><br> 
+          <a href="about.html">About</a><br>
+          <a href="contact.html">Contact</a><br>
+          <a href="index.html">Home</a><br>
+        </div>
+        <div >
+          <h1>Connect</h1><br>
+          <a href="#">Facebook</a><br>
+          <a href="https://www.instagram.com/deeganto_banerjee">Instagram</a><br>
+          <a href="https://www.linkedin.com/in/deeganto-banerjee-56385218a/">Linkedin</a><br>
+        </div>
+        <div  >
+          <h1>Projects</h1><br>
+          <a href="C:/Users/Deeganto/Desktop/My-Website/projects.html#project-1">Project-1</a><br>
+          <a href="C:/Users/Deeganto/Desktop/My-Website/projects.html#project-2">Project-2</a><br>
+          <a href="C:/Users/Deeganto/Desktop/My-Website/projects.html#project-3">Project-3</a><br>
+        </div>
+        <div >
+          <h1>Contact</h1><br>
+          <a href="https://api.whatsapp.com/send?phone=918851797364">8851797364</a><br>
+          <a href="mailto:delhideganto@gmail.com" class="email-goto">delhideganto@gmail.com</a><br>
         </div>
         </div>
-
-
-
-
-
-
-        </div>
+</div>
+</div>
+</div>
+<script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$('.quote-form-input').hide();
+$('.contact-form-input').hide();
+$('.contact-form').on('click', function(e) {
+  $('.contact-form-input').show();
+  $('.quote-form-input').hide();
+  $('.contact-form-input').removeClass('out').addClass('active');
+  $('.qoute-form-input').removeClass('active').addClass('out');
+  $('.contact-form-input').css("background-color","transparent");
+  $('.contact-form').css("background-color","transparent");   
+  $('.quote-form').css("background-color","transparent");
+});
+$('.quote-form').on('click', function(e) {
+  $('.quote-form-input').show();
+  $('.contact-form-input').hide();
+  $('.quote-form-input').removeClass('out').addClass('active');
+  $('.contact-form-input').removeClass('active').addClass('out');
+  $('.quote-form').css("background-color","transparent");
+  $('.quote-form-input').css("background-color","transparent");
+  $('.contact-form').css("background-color","transparent");
+  $('.quote-form-input').show();
+});
+</script>
     </body>
 </html>
