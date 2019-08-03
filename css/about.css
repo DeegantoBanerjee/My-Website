@@ -391,7 +391,7 @@ html,body{
     bottom:55px;
   } 
   .prev .arrow-text{
-    bottom:2px;
+    bottom:0px;
   }
   .find-out{
     bottom:12px !important;
@@ -405,7 +405,15 @@ html,body{
     font-size:17px !important;
   }
 }
-@media (max-width:320px){
+@media (max-width:400px){
+  .content{
+    font-size:15px !important;
+  }
+}
+@media (max-width:350px){
+  .content{
+    font-size:12px !important;
+  }
 }
 a{
   text-decoration: none;
