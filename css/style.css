@@ -279,7 +279,7 @@ a{
 }
 .menu{
 	display:none;
-	margin-bottom: -200px;
+	margin-bottom: -170px;
 	overflow-x:hidden;
 }
 ul{
@@ -428,7 +428,7 @@ a:hover:after {
 }
 @media(max-width:1024px){
 .container{
-  top: 51px;
+  top: 17px;
   right:20px;
   position: relative;
 }

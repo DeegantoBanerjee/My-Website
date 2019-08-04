@@ -203,7 +203,7 @@ a{
 }
 .menu{
 	display:none;
-	margin-bottom: -200px;
+	margin-bottom: -170px;
     overflow-x:hidden;
     background-color: #696969;
 
@@ -340,7 +340,7 @@ li a:hover:after {
 }
 @media(max-width:1024px){
     .container{
-      top: 51px;
+      top: 17px;
       right:20px;
       position: relative;
     }
