@@ -139,7 +139,8 @@ a{
 .top
 {
 	background-color: #696969;
-	width:100%;
+  width:100%;
+  height:100%;
   overflow-x:hidden;
   overflow-y: hidden;
 }
@@ -359,10 +360,6 @@ li a{
   -webkit-animation-name: bounceInUp;
   animation-name: bounceInUp;
 }
-.bounceInUp:hover{
-
-  text-decoration: line-through;
-}
 @media(max-width:700px){ 
 ul{
   -webkit-column-count: 2;
@@ -386,6 +383,34 @@ ul{
 li a{
   font-size: 15px;
 }
+}
+a:before, a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: #0f73ee;
+}
+
+a:before {
+  left: -2.5px;
+}
+a:after {
+  right: 2.5px;
+  background: #0f73ee;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+a:hover:before {
+  background: #0f73ee;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+a:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
 }
 .container{
    display: block;

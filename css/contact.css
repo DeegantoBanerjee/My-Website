@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 body,html{
-    width:100%;
-    height:100%;   
-    margin: 0px !important;
-    cursor:url(../img/cursor.svg),pointer !important;
-}
+  width:100%;
+  height:100%;
+  background-color:#fefefe;
+  scroll-behavior: smooth;
+  margin: 0px !important;
+  cursor:url(../img/cursor.svg),pointer !important;
+  }
 a{
   cursor:url(../img/cursor.svg),pointer !important;
-}
-html {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
   width: 0px;  
@@ -140,9 +138,10 @@ html {
 }
 .top
 {
-    background-color: #696969;
-    width:100%;
-    overflow-y:hidden;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .animated{
     -webkit-animation-duration:1s;
@@ -272,9 +271,33 @@ li a{
   -webkit-animation-name: bounceInUp;
   animation-name: bounceInUp;
 }
-.bounceInUp:hover{
+li a:before,li a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: #FF0000;
+}
 
-  text-decoration: line-through;
+li a:before {
+  left: -2.5px;
+}
+li a:after {
+  right: 2.5px;
+  background: #FF0000;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+li a:hover:before {
+  background: #FF0000;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+li a:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
 }
 @media(max-width:700px){ 
   ul{
@@ -362,7 +385,7 @@ li a{
 }
 .main-header{ 
     width:100%;
-    height:100%;
+    height:102%;
     margin:0; 
     text-align: center;
     background-color:#696969;
