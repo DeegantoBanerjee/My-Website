@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
 html,body{
-  cursor:url(../img/cursor.png),pointer !important;  
+  cursor:url(../img/cursor.svg),pointer !important;  
   background-color: #696969;
   margin: 0;
 }
@@ -299,7 +299,7 @@ html,body{
      box-shadow: none;
      outline: none;
      border:none;
-     cursor: url('../img/cursor.png'),pointer !important;
+     cursor: url('../img/cursor.svg'),pointer !important;
      overflow-x:hidden;
   }
   @media(max-width:1024px){

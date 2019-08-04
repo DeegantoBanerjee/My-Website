@@ -6,11 +6,11 @@ height:100%;
 background-color:#fefefe;
 scroll-behavior: smooth;
 margin: 0px !important;
-cursor:url(../img/cursor.png),pointer !important;
+cursor:url(../img/cursor.svg),pointer !important;
 }
 a{
   font-size:25px;
-  cursor: url(../img/cursor.png),pointer !important;
+  cursor: url(../img/cursor.svg),pointer !important;
  }
  a,h1,p{
    font-family: 'Libre Baskerville', serif;
@@ -398,7 +398,7 @@ li a{
    box-shadow: none;
    outline: none;
    border:none;
-   cursor: url(../img/cursor.png),pointer !important;
+   cursor: url(../img/cursor.svg),pointer !important;
    overflow-x:hidden;
 }
 @media(max-width:1024px){
