@@ -182,6 +182,7 @@ li a{
    display: block;
    background: transparent;
    top: 60px;
+   width:50px;
    z-index: 9999;
    right: 60px;
    float: right;

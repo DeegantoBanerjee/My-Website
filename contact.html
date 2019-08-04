@@ -3,8 +3,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">          
         <link rel="stylesheet" href="css/contact.css">
         <link rel="stylesheet" href="css/animate.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+    jQuery(document).ready(function() {
+      $("#ud_dots").
+    fadeOut(300, function () {
+      $("#ud_bg_left").animate({ left: "-50%" }, 300);
+      $("#ud_bg_right").animate({ right: "-50%" }, 300, function () {
+        $("#ud_preloader").fadeOut(10);
+      });
+    });
+  });
+  </script>
     </head>
     <body id="top">
+        <section id="ud_preloader">
+            <div id="ud_dots">
+              <p>Loading</p>
+              <div class="ud_dot" style=" animation-name:ud_preloader_1;"></div>
+              <div class="ud_dot" style=" animation-name:ud_preloader_2;"></div>
+              <div class="ud_dot" style=" animation-name:ud_preloader_3;"></div>
+              <div class="ud_dot" style=" animation-name:ud_preloader_4;"></div>
+            </div>
+            <div id="ud_bg_left" class="ud_pre_half"></div>
+            <div id="ud_bg_right" class="ud_pre_half"></div>
+          </section>
     <div class="top" id="hide">
             <script type="text/javascript" src="js/contact_script.js"></script>
             <div class="menu" id="menu">
@@ -52,13 +75,15 @@
 </div>
 <div style="text-align:center;margin: 0 auto; width:80%;" id="in-container" >
 <div class="contact-form-input" id="contact-form">
-    <input type="text" id="fname" name="firstname" placeholder="First Name">
-    <input type="text" id="lname" name="lastname" placeholder="Last Name">
-    <input type="text" id="msg" name="message" placeholder="Message">
-    <br>
-	<button class="ripple">Submit</button>
-</div>
+    <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyP-vs7gG869sONf0MKHCPAq6fTCCcvlJdaXCQN53VW0krkAU3V/exec">  
+          <input type="text" id="name" name="name" placeholder="What your Mom calls you"/>
+          <input type="text" id="message" name="message" rows="10" placeholder="Send Message">
+          <input id="email" name="email" type="email" value="" required placeholder="your.name@email.com"/><br>
+        <button class="ripple">Send</button>
+      </form>
+      </div>
 <div class="quote-form-input" id="quote-form">
+    <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbycYYu8myt4dZkyW0JQXBPMPQpxLqeOYIJFegBUSQ/exec">  
     <input type="text" id="fullname" name="fullname" placeholder="Full Name">
     <input type="text" id="cname" name="companyname" placeholder="Company Name">
     <input type="email" id="email" name="email" placeholder="Email">
@@ -66,37 +91,41 @@
     <input type="text" id="msg" name="message" placeholder="Message">
     <br> 
     <button class="ripple">Submit</button>
+  </form>
 </div>
 </div>
 </div>
 <div class="footer" id="footer">
-        <div >
-          <h1>Deeganto</h1><br> 
-          <a href="about.html">About</a><br>
-          <a href="contact.html">Contact</a><br>
-          <a href="index.html">Home</a><br>
-        </div>
-        <div >
-          <h1>Connect</h1><br>
-          <a href="#">Facebook</a><br>
-          <a href="https://www.instagram.com/deeganto_banerjee">Instagram</a><br>
-          <a href="https://www.linkedin.com/in/deeganto-banerjee-56385218a/">Linkedin</a><br>
-        </div>
-        <div  >
-          <h1>Projects</h1><br>
-          <a href="C:/Users/Deeganto/Desktop/My-Website/projects.html#project-1">Project-1</a><br>
-          <a href="C:/Users/Deeganto/Desktop/My-Website/projects.html#project-2">Project-2</a><br>
-          <a href="C:/Users/Deeganto/Desktop/My-Website/projects.html#project-3">Project-3</a><br>
-        </div>
-        <div >
-          <h1>Contact</h1><br>
-          <a href="https://api.whatsapp.com/send?phone=918851797364">8851797364</a><br>
-          <a href="mailto:delhideganto@gmail.com" class="email-goto">delhideganto@gmail.com</a><br>
-        </div>
-        </div>
+    <div >
+      <h1>Deeganto</h1><br> 
+      <a href="about.html">About</a><br>
+      <a href="contact.html">Contact</a><br>
+      <a href="index.html">Home</a><br>
+    </div>
+    <div >
+      <h1>Connect</h1><br>
+      <a href="#">Facebook</a><br>
+      <a href="https://www.instagram.com/deeganto_banerjee">Instagram</a><br>
+      <a href="https://www.linkedin.com/in/deeganto-banerjee-56385218a/">Linkedin</a><br>
+    </div>
+    <div  >
+      <h1>Projects</h1><br>
+      <a href="C:/Users/Deeganto/Desktop/My-Website/projects.html#project-1">Project-1</a><br>
+      <a href="C:/Users/Deeganto/Desktop/My-Website/projects.html#project-2">Project-2</a><br>
+      <a href="C:/Users/Deeganto/Desktop/My-Website/projects.html#project-3">Project-3</a><br>
+    </div>
+    <div >
+      <h1>Contact</h1><br>
+      <a href="https://api.whatsapp.com/send?phone=918851797364">8851797364</a><br>
+      <a href="mailto:delhideganto@gmail.com" class="email-goto">delhideganto@gmail.com</a><br>
+    </div>
+    </div>
+</div>  
+</div>
+
 </div>
 </div>
-</div>
+<script data-cfasync="false" src="js/form-submission-handler.js"></script>
 <script src="js/wow.min.js"></script>
 <script>
  new WOW().init();
