@@ -255,7 +255,7 @@ html,body{
     -webkit-animation-name: bounceInUp;
     animation-name: bounceInUp;
   }
-  a:before, a:after {
+  li a:before,li a:after {
     content: '';
     position: absolute;
     width: 0%;
@@ -265,20 +265,20 @@ html,body{
     background: #0f73ee;
   }
 
-  a:before {
+  li a:before {
     left: -2.5px;
   }
-  a:after {
+  li a:after {
     right: 2.5px;
     background: #0f73ee;
     transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
-  a:hover:before {
+  li a:hover:before {
     background: #0f73ee;
     width: 100%;
     transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
-  a:hover:after {
+  li a:hover:after {
     background: transparent;
     width: 100%;
     transition: 0s;
