@@ -204,7 +204,7 @@ html {
 }
 .menu{
 	display:none;
-	margin-bottom: -160px;
+	margin-bottom: -200px;
     overflow-x:hidden;
     background-color: #696969;
 
@@ -222,7 +222,8 @@ li a{
   display: block;
   color: #ffd700;
   text-align: center;
-  padding-bottom: 30px;
+  margin-bottom:25px;
+  margin-right: 120px;
   text-decoration: none;
   font-size:25px;
   font-weight:bold;
@@ -268,7 +269,6 @@ li a{
 }
 
 .bounceInUp {
-  padding-right: 120px;
   -webkit-animation-name: bounceInUp;
   animation-name: bounceInUp;
 }
@@ -308,7 +308,7 @@ li a{
    width:75px;
    right: 60px;
    float: right;
-   position: relative;
+   position: fixed;
    box-shadow: none;
    outline: none;
    border:none;
@@ -317,8 +317,9 @@ li a{
 }
 @media(max-width:1024px){
     .container{
-      top: 17px;
+      top: 51px;
       right:20px;
+      position: relative;
     }
 .bounce{
   top:0px;

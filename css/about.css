@@ -191,7 +191,7 @@ html,body{
   }
   .menu{
     display:none;
-    margin-bottom: -240px;
+    margin-bottom: -200px;
     overflow-x:hidden;
   }
   ul{
@@ -210,8 +210,9 @@ html,body{
   li a{
     display: block;
     color: white;
+    margin-right: 120px;
     text-align: center;
-    padding-bottom: 30px;
+    margin-bottom:25px;
     text-decoration: none;
   }
   @keyframes bounceInUp {
@@ -251,7 +252,6 @@ html,body{
     }
   }
   .bounceInUp {
-    padding-right: 120px;
     -webkit-animation-name: bounceInUp;
     animation-name: bounceInUp;
   }
@@ -304,7 +304,7 @@ html,body{
   }
   @media(max-width:1024px){
   .container{
-    top: 17px;
+    top: 51px;
     right:20px;
   }
   .bounce{

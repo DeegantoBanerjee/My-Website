@@ -278,7 +278,7 @@ a{
 }
 .menu{
 	display:none;
-	margin-bottom: -160px;
+	margin-bottom: -200px;
 	overflow-x:hidden;
 }
 ul{
@@ -293,9 +293,10 @@ ul{
 }
 li a{
   display: block;
+  margin-bottom:25px;
   color: white;
   text-align: center;
-  padding-bottom: 30px;
+  margin-right:120px;
   text-decoration: none;
 }
 .animated.delay3s {
@@ -355,7 +356,6 @@ li a{
   }
 }
 .bounceInUp {
-  padding-right: 120px;
   -webkit-animation-name: bounceInUp;
   animation-name: bounceInUp;
 }
@@ -394,7 +394,7 @@ li a{
    z-index: 9999;
    right: 60px;
    float: right;
-   position: relative;
+   position: fixed;
    box-shadow: none;
    outline: none;
    border:none;
@@ -403,8 +403,9 @@ li a{
 }
 @media(max-width:1024px){
 .container{
-  top: 17px;
+  top: 51px;
   right:20px;
+  position: relative;
 }
 .bounce{
   top:0px;
@@ -621,9 +622,7 @@ background-color:#d3d3d3;
   transition: transform .8s ease, top .8s ease;
 } 
 .grow{ 
-  height: 280px;
   border: 1px solid #ebe9e8;
- 
   background-color: transparent;
 }
 @keyframes fadeIn {

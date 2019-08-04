@@ -3,6 +3,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">          
         <link rel="stylesheet" href="css/contact.css">
         <link rel="stylesheet" href="css/animate.css">
+        <title>
+          Contact Me.
+        </title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
     jQuery(document).ready(function() {
@@ -75,7 +78,7 @@
 </div>
 <div style="text-align:center;margin: 0 auto; width:80%;" id="in-container" >
 <div class="contact-form-input" id="contact-form">
-    <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyP-vs7gG869sONf0MKHCPAq6fTCCcvlJdaXCQN53VW0krkAU3V/exec">  
+    <form class="gform" method="POST" onsubmit="submitted()" action="https://script.google.com/macros/s/AKfycbyP-vs7gG869sONf0MKHCPAq6fTCCcvlJdaXCQN53VW0krkAU3V/exec">  
           <input type="text" id="name" name="name" placeholder="What your Mom calls you"/>
           <input type="text" id="message" name="message" rows="10" placeholder="Send Message">
           <input id="email" name="email" type="email" value="" required placeholder="your.name@email.com"/><br>
@@ -83,7 +86,7 @@
       </form>
       </div>
 <div class="quote-form-input" id="quote-form">
-    <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbycYYu8myt4dZkyW0JQXBPMPQpxLqeOYIJFegBUSQ/exec">  
+    <form class="gform" method="POST" onsubmit="submitted()" action="https://script.google.com/macros/s/AKfycbycYYu8myt4dZkyW0JQXBPMPQpxLqeOYIJFegBUSQ/exec">  
     <input type="text" id="fullname" name="fullname" placeholder="Full Name">
     <input type="text" id="cname" name="companyname" placeholder="Company Name">
     <input type="email" id="email" name="email" placeholder="Email">

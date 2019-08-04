@@ -1,8 +1,5 @@
-function disappear(){
-	var x = document.getElementById("contact-form");
-	var y = document.getElementById("quote-form");
-	y.style.display = "none";
-	x.style.display = "none";
+function submitted(){
+alert("Your Message is Recieved, i will get back to you soon");
 }
 function show_menu(){ 
 	document.body.scrollTop = 0;
