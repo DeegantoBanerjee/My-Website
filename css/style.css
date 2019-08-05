@@ -373,6 +373,12 @@ ul{
 .bounce{
   left:0px;
 }
+li a:hover:before{
+  transition-property: none;
+}
+li a:hover:after{
+  transition-property: none;
+}
 }
 @media(max-width:400px){
 ul{
