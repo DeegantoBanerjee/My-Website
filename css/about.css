@@ -538,7 +538,7 @@ html,body{
     bottom:55px;
   } 
   .prev .arrow-text{
-    bottom:0px;
+    bottom:-10px;
   }
   .find-out{
     bottom:12px !important;
