@@ -304,6 +304,9 @@ html,body{
   .menu{
     margin-bottom: -200px;
   }
+  li a:after, li a:before{
+    width: 0;
+  }
   li a:hover:before{
     transition-property: none  !important;
   }

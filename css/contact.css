@@ -314,6 +314,9 @@ li a:hover:after {
   .bounce{
     left:0px;
   }
+  li a:after, li a:before{
+    width: 0;
+  }
   li a:hover:before{
     transition-property: none  !important;
   }
