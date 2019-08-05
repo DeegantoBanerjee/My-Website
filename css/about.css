@@ -305,10 +305,10 @@ html,body{
     margin-bottom: -200px;
   }
   li a:hover:before{
-    transition-property: none;
+    transition-property: none  !important;
   }
   li a:hover:after{
-    transition-property: none;
+    transition-property: none  !important;
   }
   }
   @media(max-width:400px){
