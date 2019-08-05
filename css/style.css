@@ -375,11 +375,11 @@ ul{
 }
 
 li a:hover:before{
-  width:0 !important;
+  width:0%  !important;
   transition-property: none !important;
 }
 li a:hover:after{
-  width:0 !important;
+  width:0%  !important;
   transition-property: none !important;
 }
 }
